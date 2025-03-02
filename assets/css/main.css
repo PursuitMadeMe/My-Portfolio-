@@ -1958,3 +1958,37 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Ensure the whole about section is centered */
+.about-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Center the personal info section */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Center the signature */
+.signature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Adjust the signature image size if needed */
+.signature-img {
+  max-width: 500px; /* Adjust if necessary */
+}
+
+
