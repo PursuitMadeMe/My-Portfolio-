@@ -14,3 +14,4 @@ export default defineConfig({
     outDir: "dist", // Output directory
   },
 });
+console.log('Vite configuration loaded');
