@@ -1,11 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vite.dev/config/
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  plugins: [react()],
   root: ".", // Ensures Vite starts from the correct folder
+  publicDir: "public", // Ensure Netlify sees the _redirects file
   build: {
     rollupOptions: {
       input: {
@@ -15,5 +14,3 @@ export default defineConfig({
     outDir: "dist", // Output directory
   },
 });
-
-
